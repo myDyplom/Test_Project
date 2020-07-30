@@ -1,0 +1,35 @@
+<div class="header navigation">
+  <div class="col-xl-3 col-lg-2 col-sm-4 col-5">
+    <a href="/">
+      <img alt="Logo" class="img-fluid py-3 logo" src="https://raw.githubusercontent.com/solodev/shopping-cart-items-number/master/images/lunar-xp-logo.png" aria-role="logo">
+    </a>
+  </div>
+  <div class="col-xl-9 col-lg-10 col-sm-8 col-7">
+
+    <ul class="navbar-nav flex-row justify-content-end flex-wrap align-items-center mr-lg-4 mr-xl-0">
+      <li class="nav-item px-3 text-uppercase mb-0 position-relative d-lg-flex">
+        <div id="cart" class="d-none">
+
+        </div>
+        <a routerLink="/basket" class="cart position-relative d-inline-flex" aria-label="View your shopping cart">
+          <i class="fas fa fa-shopping-cart fa-lg">
+            <img src="https://simpleicon.com/wp-content/uploads/basket.png" alt="" height="50">
+          </i>
+          <span class="cart-basket d-flex align-items-center justify-content-center">
+            {{store.products.length}}
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="products-container">
+  <div class="products">
+    <div *ngFor="let product of productsList" class="product">
+      <app-product [product]="product"></app-product>
+    </div>
+  </div>
+</div>
+
+

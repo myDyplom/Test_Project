@@ -1,3 +1,16 @@
+# Local deployment instructions
+
+1. 	Go to that folder
+
+2.	First time run:
+	  npm install (needs internet connection)
+
+3.	Run Server:   
+		ng serve
+		
+4.	Point you browser to: http://localhost:4200 
+
+
 # Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
